@@ -25,7 +25,7 @@ default_args = {
 }
 
 with DAG('mlops_demo_dag',
-  start_date = days_ago(2),
+  start_date = days_ago(1),
   schedule_interval = None,
   default_args = default_args
   ) as dag:
